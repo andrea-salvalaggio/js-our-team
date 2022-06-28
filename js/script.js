@@ -41,9 +41,25 @@ for (let i = 0; i < ourTeam.length; i++) {
     console.log(ourTeam[i].name, "=>", ourTeam[i].job, "=>", ourTeam[i].imageUrl);
 }
 
+/**********************/
+
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 
 // Creo un variabile e importo il contenitore del team
 const containerTeam = document.getElementById('container-team');
 
+let i = 0;
+
+for (i = 0; i < ourTeam.length; i++) {
+
+    // Creo una variabile che contiene il template del team
+    let teamMember = `<div class="team-member p-3">
+                        <img class="rounded-3" src="img/${ourTeam[i].imageUrl}" alt="${ourTeam[i].name}">
+                        <h3 class="mb-0 mt-3 fw-bold">${ourTeam[i].name}</h3>
+                        <p class="m-0">${ourTeam[i].job}</p>
+                      </div>`;
+
+    // Aggiungo la stringa all'interno del container
+    containerTeam.innerHTML += teamMember;
+}
