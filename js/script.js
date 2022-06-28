@@ -57,8 +57,7 @@ for (i = 0; i < ourTeam.length; i++) {
     let teamMember = `<div class="team-member p-3">
                         <img class="rounded-3" src="img/${ourTeam[i].imageUrl}" alt="${ourTeam[i].name}">
                         <h3 class="mb-0 mt-3 fw-bold">${ourTeam[i].name}</h3>
-                        <p class="m-0">${ourTeam[i].job}</p>
-                      </div>`;
+                        <p class="m-0">${ourTeam[i].job}</p></div>`;
 
     // Aggiungo la stringa all'interno del container
     containerTeam.innerHTML += teamMember;
