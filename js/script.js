@@ -40,3 +40,10 @@ for (let i = 0; i < ourTeam.length; i++) {
     // Stampo in console le tre informazioni
     console.log(ourTeam[i].name, "=>", ourTeam[i].job, "=>", ourTeam[i].imageUrl);
 }
+
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+// Creo un variabile e importo il contenitore del team
+const containerTeam = document.getElementById('container-team');
+
